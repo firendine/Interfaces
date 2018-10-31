@@ -1,0 +1,65 @@
+@import '../../abstracts/_variables.scss';
+
+.panel{
+    border-style: solid;
+    border-width:2px;
+    border-radius:14px;
+    font-family: Arial; 
+}
+.panel__head{
+background-color: royalblue;
+color: white;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+padding-left: 20;
+padding-top: 20;
+padding-bottom: 20;
+
+}
+.panel__body{
+    background-color: white;
+    color: black;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding-left: 20;
+    padding-bottom: 20;
+    padding-top: 20;
+}
+
+// .panel--medium{
+// font-size: $font-size-medium;    
+// }
+// .panel--info{
+//     border-color:$color-info;
+// }
+// .panel--warning{
+//     border-color:pink;
+// }
+// .panel__head--warning{
+//     background-color: pink;
+// }
+
+// .panel--small{
+//     font-size: $font-size-small;
+// }
+
+// .panel__body--small{
+//     color: $color-primary;
+// }
+// .panel--large{
+//     font-size: $font-size-large;
+    
+// }
+
+
+/////////////////////////////////////////////
+
+// @each $tipo, $color in $colors{
+//     .panel--#{$tipo}{
+//         border-color:$color;
+//     }
+// }
+
+
+
+

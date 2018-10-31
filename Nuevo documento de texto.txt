@@ -1,0 +1,25 @@
+
+-------------
+NOMENCLATURA
+-------------
+
+arbol-jerarquico
+arbol-jerarquico--large
+arbolJerarquico
+arbolJerarquico--large
+arbolJerarquico--extraLarge
+arbol-Jerarquico--extra-large
+\______________/\____________/
+ nombre clase	 modificador
+		 de la clase
+
+Ejemplo:
+<button class= "button button--primary button--large" type="button">
+
+
+cabecera más grande que el cuerpo (2px más)
+'bem'
+
+
+
+

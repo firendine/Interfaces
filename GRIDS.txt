@@ -1,0 +1,38 @@
+.grid{
+	display: grid;
+}
+
+.grid--2col{
+	grid-template-areas: 'column1 colum2';
+}
+
+.grid--3col{
+	grid-template-areas: 'column1 colum2 column3';
+}
+
+
+.grid--4col{
+	grid-template-areas: 'column1 colum2 column3 column4';
+}
+
+.grid__column1 {
+
+	grid-area:column1;
+}
+
+.grid__column2 {
+
+	grid-area:column2;
+}
+
+
+
+.grid--complex{
+
+	grid-template-areas:
+		'column1 column1 column2 column3'
+		'column1 column1 column2 column5' 
+		'column1 column1 column4 column5'
+//cada numero de columna correspondería, por ejemplo, a una imagen.
+//Todas las column1 correspondería a una imagen que ocupe todas las zonas donde está column1
+}
