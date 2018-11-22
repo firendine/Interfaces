@@ -1,0 +1,22 @@
+<div panel panel--color-verde> <---- Los modificadores deben ir 				     		     	     acompañados del elemento padre.
+
+  <div panel__titulo> <----- Los elementos hijos deben tener el elemento
+  <div panel__cuerpo> <----- padre en una de las etiquetas padre que las 			     	     	     encapsula, pero no en esa misma.
+  
+
+
+			    \
+ panel__cuerpo--color-verde  |
+|____|  |____|  |_________|  | Sigue esta estructura,
+  B	   E	     M       | no puede ser BEEM ni BEMM.
+ block  element modificador  |
+			    /
+
+
+ panel panel--descubre  
+ panel panel--configura <---serían modificadores
+
+
+NO LLAMAR A LOS BLOCK NI ELEMENTOS "GRID" ni "FLEX" porque son tecnologias que pueden quedar obsoletas y/o cambiar. Usar "layout", por ejemplo.
+
+EXAMEN -> usar grid o flex donde queramos, excepto en menus(flex)
