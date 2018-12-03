@@ -1,0 +1,44 @@
+.layout{
+
+
+}
+.layout__page{
+    display:grid;
+    
+    grid-template-areas:
+        'area1 area1'
+        'area2 area3'
+        'area4 area4';
+        
+        grid-template-columns: auto 300px ;
+        grid-template-rows: 400px 1200px 800px;
+        grid-gap: 10px;
+        background-color:grey;
+
+}
+
+
+
+@for $i from 1 through 4{
+    .layout__area#{$i}{
+        grid-area: area+$i;
+        background-color: lightgrey;
+    }
+}
+
+ @for $i from 2 through 5{
+    .layout--#{$i}col{
+        
+         grid-template-columns: repeat($i,1fr);
+        
+    }
+ }
+
+.layout--horizontal{
+    display: flex;
+
+    flex-direction: row;
+}
+
+
+
