@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="anim.css">
+
+</head>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js">
+
+$("button").click(function(){
+    if($("#text").hasClass("texto")){
+        document.getElementById("text").setAttribute("class","textoP");
+    }else if($("#text").hasClass("textoP")){
+        document.getElementById("text").setAttribute("class","textoM");
+        
+    }else if($("#text").hasClass("textoM")){
+        document.getElementById("text").setAttribute("class","textoP");
+    }
+  });
+
+</script>
+<body>
+
+<button id="but">cambiar</button>
+
+<span id="text" class="texto">hola</span>
+
+
+<!--<div></div>-->
+
+</body>
+</html>

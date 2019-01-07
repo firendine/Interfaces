@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monitor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="vendor/font-awesome/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class = "grid grid--page">
+        <section class="menu-lateral grid__item-lateral ">
+            <header class="text text--title">Monitor</header>
+            <br><br>
+            <nav>
+                <ul class="text text--options flex flex--vertical">
+                    <li>Memoria</li>
+                    <li>CPU</li>
+                    <li>Red</li>
+                    <li>Base de Datos</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="menu grid__item-menu">
+            <nav>
+                <ul class="text text--menu flex flex--horizontal">
+                    <li class= "menu__button">Usuarios</li>
+                    <li class= "menu__button">Grupos</li>
+                    <li class="menu__button">Permisos</li>
+                    <li class="menu__button menu__button--entrar">Entrar</li>
+                </ul>
+            </nav>
+        </section>
+        <section  class="panel grid__item-procesos">
+            <header class="text text--title">Procesos</header>
+            <article>
+
+            </article>
+            <article>
+                <progress max="100" value="80"></progress>
+            </article>
+            <article>
+                <progress max="100" value="60"></progress>
+            </article>
+        </section>
+        <section class= "grid__item-switch">
+            <article width="100" height="100" class="flex--horizontal switch " > 
+                <label class="switch__item">
+                    <span>Antivirus:</span>
+                    <input type="checkbox" checked>
+                    <span class="slider"> Off On</span>
+                </label>
+                <label class="switch__item">
+                    <span>Cortafuegos</span>
+                    <input type="checkbox" checked>
+                    <span class="slider"> Off On</span>
+                </label>
+                <label class="switch__item">
+                    <span>SELinux</span>
+                    <input type="checkbox" checked>
+                    <span class="slider"> Off On</span>
+                </label>
+            </article>
+        </section>
+    </body>
+</html>

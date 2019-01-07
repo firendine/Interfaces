@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-ene-2018, 9:38:04
+    Author     : logongas
+*/
+
+#cuerpo {
+    position: absolute;
+    left:279px;
+    top:200px;
+    animation-name: cuerpo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;    
+}
+
+#ala_izquierda {
+    position: absolute;
+    left:0px;
+    top:0px;    
+    transform-origin: 100% 0%;
+    animation-name: ala-izquierda;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+#ala_derecha {
+    position: absolute;
+    left:310px;
+    top:0px; 
+    transform-origin: 0% 0%;
+    animation-name: ala-derecha;   
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cuerpo {
+     0%   {
+        transform: translate(0px,0px)
+        
+    }
+    50%   {
+        transform: translate(100px,100px)
+    }    
+    100% {
+        transform: translate(0px,0px)
+    }
+}   
+
+@keyframes ala-izquierda {
+    0%   {
+        transform: translate(0px,0px) rotateY(0deg);
+        transform-origin: 100% 0%;
+        
+    }
+    50%   {
+        transform: translate(100px,100px) rotateY(90deg);
+            transform-origin: 100% 0%;
+    }    
+    100% {
+        transform: translate(0px,0px) rotateY(0deg);
+            transform-origin: 100% 0%;
+    }
+}
+
+@keyframes ala-derecha {
+    0%   {
+        transform: translate(0px,0px) rotateY(0deg)
+    }
+    50%   {
+        transform: translate(100px,100px) rotateY(90deg)
+    } 
+    100% {
+        transform: translate(0px,0px) rotateY(0deg)
+    }
+}

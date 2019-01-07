@@ -1,0 +1,34 @@
+.grid{
+    display:grid;
+
+}
+
+.grid__item-lateral { 
+    grid-area: lateral; 
+
+}
+.grid__item-menu { 
+    grid-area: menu; 
+    
+}
+.grid__item-procesos { 
+    grid-area: procesos; 
+}
+.grid__item-switch { 
+    grid-area: switch; 
+}
+.grid__item-otro { 
+    grid-area: otro; 
+}
+
+.grid--page{
+grid-template-areas: 'lateral menu menu menu'
+                     'lateral procesos procesos procesos'
+                     'lateral procesos procesos procesos'
+                     'lateral switch switch switch';
+grid-template-columns: 150px auto auto auto ;
+grid-template-rows: auto auto auto 50px;
+grid-gap: 10px;
+background-color: grey;
+padding: 10px;
+}
