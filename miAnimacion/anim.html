@@ -1,21 +1,29 @@
 <html>
 <head>
 <link rel="stylesheet" href="anim.css">
-
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<script type="text/javascript">
+	$(document).ready(function() {
 
-<script src="https://code.jquery.com/jquery-1.10.2.js">
+  
 
-$("button").click(function(){
-    if($("#text").hasClass("texto")){
-        document.getElementById("text").setAttribute("class","textoP");
-    }else if($("#text").hasClass("textoP")){
-        document.getElementById("text").setAttribute("class","textoM");
-        
-    }else if($("#text").hasClass("textoM")){
-        document.getElementById("text").setAttribute("class","textoP");
-    }
-  });
+    $("button").on("click", setTimeout(function(){
+        if($("#text").hasClass("texto")){
+            document.getElementsByTagName("span")[0].setAttribute("class","textoP");
+        }else if($("span").hasClass("textoP")){
+            document.getElementById("text").setAttribute("class","textoM");
+         //document.getElementsByTagName("span")[0].setAttribute("class","textoM");
+        }else if($("#text").hasClass("textoM")){
+            document.getElementById("text").setAttribute("class","textoP");
+        }else{
+            console.log("no va"); 
+            console.log(document.getElementsByTagName("span")[0]);
+        }
+    }, 2000));
+	});
+
+
 
 </script>
 <body>
